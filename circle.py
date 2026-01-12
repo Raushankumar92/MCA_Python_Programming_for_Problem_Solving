@@ -1,7 +1,19 @@
 import math
+from shapes.point import Point
 
-def area(r):
-    return math.pi * r * r
+class Circle:
+    def __init__(self, center, radius):
+        self.center = center    # center is a Point object
+        self.radius = radius
 
-def perimeter(r):
-    return 2 * math.pi * r
+    def area(self):
+        return math.pi * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * math.pi * self.radius
+
+    def display(self):
+        print("Center:", self.center.display())
+        print("Radius:", self.radius)
+        print("Area:", self.area())
+        print("Perimeter:", self.perimeter())

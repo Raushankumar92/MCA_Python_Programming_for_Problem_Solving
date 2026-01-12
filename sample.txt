@@ -1,0 +1,8 @@
+# Create and write to sample.txt
+
+with open("sample.txt", "w") as file:
+    file.write("Hello, this is a sample text file.\n")
+    file.write("It contains multiple lines.\n")
+    file.write("We will count the number of lines and words.\n")
+
+print("sample.txt created successfully!")
